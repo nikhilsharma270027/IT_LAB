@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script type="text/javascript">
+        var states=new Array("KARNATAKA","MP");
+        document.write("<h1>program to demostrate Array methods</h1>"); //Output: Karnataka,Madhya Prade
+        document.write("<hr/>");
+        document.writeln("<br>ARRAY initially <br/>"+ states);
+        states.push("TAMIL NADU");
+        document.writeln("<br><br/>Array after adding element<br>" + states);
+        states.unshift("ANDRA PRADESH");
+        document.writeln("<br/><br/>After insert the array with new value:<br>"+states);
+        states.sort();
+        document.writeln("<br><br/>ARRAY after sorting  "+states);
+        states.reverse();
+        document.writeln("<br><br/>ARRAY after resvering  "+states);
+        var newarr=states.slice(2,4);
+        document.writeln("<br><br/>ARRAY after slicing  "+newarr);
+        var newarr1=states.join("**");
+        document.writeln("<br><br/>ARRAY after concat array  "+newarr1);
+        var concate=states.concat("KASHMIR","HARYANA");
+        document.writeln("<br><br/>ARRAY after concating  "+concate);
+        states.shift();
+        states.pop();
+        document.writeln("<br><br/>ARRAY After removing elements from both ends "+states);
+     </script>
+</head>
+<body>   
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function sum()
+            {
+                var  n,sum,response,i;
+                n=prompt("Enter a positive integer : ");
+                n=parseInt(n);
+                sum=0;
+                for(i=1;i<=n;i++)
+                    sum=sum + i;
+                alert("Sum of numbers upto " +n+ "is :"+ sum); 
+                
+                confirm("HAPPY with the output");
+            }
+    </script>
+    <title>dialoude box</title>
+</head>
+<body>
+    <h1 align="center">SUM OF N numbers</h1>
+    <form>
+        <input type="button" value="calcuatesum" onclick="sum();"/>
+    </form>
+</body>
+</html>
